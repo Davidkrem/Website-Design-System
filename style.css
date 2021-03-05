@@ -36,8 +36,37 @@
       U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
       U+FEFF, U+FFFD;
   }
+
+  font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* Main Section */
+
+
   body {
-    background-color: #f3f4f8;
+    background-color: #7b9bc033;
     height: 1000px;
     width: 100%;
   }
@@ -80,10 +109,10 @@
   
   h3 {
     font-weight: 300;
-    font-size: 35px;
+    font-size: 36px;
     color: #125890;
     /* margin: 0px 0px 0px 0px; */
-    margin: 0px 0px 10px 0px;
+    margin: 55px 0px 10px 0px;
   }
   
   h3:hover {
@@ -128,25 +157,25 @@
   
   .website-model h3 {
       margin: 6px;
-      margin: 36px auto;
+      margin: 65px auto;
   }
   .website-model span {
-    padding: 7px 10px;
-    margin: 20px auto;
+    padding: 6px 10px;
+    margin: 9px auto;
   }
   .screenshot-Jay {
       margin;
       width: 300px;
       height: auto;
       border: 1px solid black;
-      margin: -24px 0px 52px 0px;
+      margin: -55px 0px 17px 0px;
   }
   
   /* color scheme section */
 
   .blue {
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       border: 1px solid #125890;
       border-radius: 5px;
   }
@@ -164,13 +193,18 @@
       width: 100%;
       display: block;
   }
+ 
   
-  .color-panel {height: 90px;margin: 5px auto;display: inline-block;width: 14%;text-align: center;margin: 10px 0px 10px 0px;padding: -4px;}
+  .color-panel {height: 65px;margin: 5px auto;display: inline-block;width: 11%;text-align: center;margin: 0px 0px 10px 0px;padding: -4px;}
 
   .mixed-blue {
       background-color: #125890;
-      color: white;
+      color: #f1ecec;
   }
+  .mixed-blue:hover {
+    color: grey;
+    opacity: 0.9;
+}
 
   .color p {
       display: block;
@@ -184,72 +218,130 @@
       background-color:#904a12;
       color: white;
   }
+  .brown:hover {
+    color: grey;
+    opacity: 0.9;
+}
 
   .light-blue {
       background-color:#129089 ;
       color: white;
-    
+
   }
+  .light-blue:hover {
+    color: grey;
+    opacity: 0.9;
+}
   
   .dark-blue {
       background-color:#121990 ;
       color: white;
   }
+  .dark-blue:hover {
+    color: grey;
+    opacity: 0.9;
+}
 
   .dark-pink {
       background-color: #901258;
       color: white;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  /* hover rgb reveal 
+  .dark-pink:hover {
+    color: grey;
+    opacity: 0.9;
+}
 
-.rgb .rgbtext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
+
+/* Font Section */
+
+#fonts {
+    margin: 30px auto;
+}
+
+.font-panel {
+    width: 30%;
+    width: 50;
+    display: inline-block;
+    border: 2px solid #129089;
+    margin: 1px;
+    padding FONT-WEIGHT: 500;
+    line-height: 2;
+    letter-spacing: .1px;
+    padding: 10px;
+}
+.font-label {
+    font-size: 18px;
+    text-decoration: underline;
+}
+.fonts p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.barlow {
+    font-family: "barlow";
+    font-size: 16px;
+    background-color: lightgray;
+    opacity: .8;
+}
+
+.lato {
+    font-family: "lato";
+    font-size: 16px;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+
+.fantasy {
+    font-family: fantasy;
+    background-color: lightgray;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* Symbols section */
+.mic {
+    width: 75px;
+    height: auto;
+
+}
+
+/* animation section */
+.box {
+    position: relative;
+    border: 3px solid #000;
+    border-radius: 14px;
+    left: 42%;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background:  #125890;
+    transition: 
+      /* step 1 */
+      width      1s,
+      /* step 2 */
+      background 0.5s 1s;
+    line-height: 4;
   }
   
-  .rgb {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 2px;
+  .box:hover {
+    width: 400px;
+    background: #901258;
+    
   }
-  
-  .rgb.rgbtext::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: grey transparent transparent transparent;
-  }
-  
-  .rgb:hover .rgbtext {
-    visibility: visible;
-  }
-
-
-
-
-
 
 
 
