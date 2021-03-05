@@ -1,108 +1,288 @@
 * {
-  padding: 0;
-  margin: 0;
-}
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Fonts */
+  
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3p-ks51ostz0rdg.woff2)
+      format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+      U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3_-gs51ostz0rdg.woff2)
+      format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+      U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3t-4s51ostz0rdg.woff2)
+      format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+      U+FEFF, U+FFFD;
+  }
+  body {
+    background-color: #f3f4f8;
+    height: 1000px;
+    width: 100%;
+  }
 
-/* Fonts */
+  main {
+    font-family: 'Barlow';
+    text-align: center;
+    overflow: scroll;
+  }
+  
+  h1 {
+    font-weight: 300;
+    font-size: 63px;
+    color:#125890;
+    padding: 20px;
+    margin-bottom: 53px;
+  }
+  /* h1 "style" word */
+  
+  .style {
+    color: cornflowerblue;
+    font-weight: 500;
+  }
+  .style:hover {
+    color: rgb(5, 5, 105);
+  }
+  
+  h2 span {
+    font-family: 'Barlow';
+    font-size: 35px;
+    color: #125890;
+    font-weight: 300;
+    margin: 75px;
+    padding: 6px 10px;
+  }
+  h2 span:hover {
+    color: #125890;
+    opacity: 0.7;
+  }
+  
+  h3 {
+    font-weight: 300;
+    font-size: 35px;
+    color: #125890;
+    /* margin: 0px 0px 0px 0px; */
+    margin: 0px 0px 10px 0px;
+  }
+  
+  h3:hover {
+    color: #125890;
+    opacity: 0.7;
+  }
+  
+  /* subheadings will be h4 */
+  
+  h4 {
+    font-size: 30px;
+    color: #125890;
+  }
+  
+  /* headshots */
+  
+  .pics li {
+    display: inline-block;
+  }
+  
+  img {
+    box-sizing: border-box;
+    width: auto;
+    height: 192px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 5px 11px 0 5px;
+  }
+  img:hover {
+    color: rgb(19, 18, 18);
+    opacity: 0.8;
+  }
+  
+  figcaption:hover {
+    color: grey;
+  }
+  
+  /* link to my website model Jay Pharoah */
+  a:link {
+    text-decoration: none;
+  }
+  
+  .website-model h3 {
+      margin: 6px;
+      margin: 36px auto;
+  }
+  .website-model span {
+    padding: 7px 10px;
+    margin: 20px auto;
+  }
+  .screenshot-Jay {
+      margin;
+      width: 300px;
+      height: auto;
+      border: 1px solid black;
+      margin: -24px 0px 52px 0px;
+  }
+  
+  /* color scheme section */
 
-@font-face {
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3p-ks51ostz0rdg.woff2)
-    format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3_-gs51ostz0rdg.woff2)
-    format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
+  .blue {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #125890;
+      border-radius: 5px;
+  }
+  
+  .colors h3 {
+      margin: 59px 0px 10px 0px;
+  }
 
-@font-face {
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E3t-4s51ostz0rdg.woff2)
-    format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-body {
-  background-color: rgb(173 198 225 / 65%);
-}
+  .colors p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #125890;
+  }
+.color-container {
+      width: 100%;
+      display: block;
+  }
+  
+  .color-panel {height: 90px;margin: 5px auto;display: inline-block;width: 14%;text-align: center;margin: 10px 0px 10px 0px;padding: -4px;}
 
-main {
-  font-family: 'Barlow';
-  text-align: center;
-  overflow: scroll;
-}
+  .mixed-blue {
+      background-color: #125890;
+      color: white;
+  }
 
-h1 {
-  font-weight: 300;
-  font-size: 63px;
-  color: black;
-  padding: 20px;
-  margin-bottom: 74px;
-}
+  .color p {
+      display: block;
+      margin-block-start: 1em;
+      margin-inline-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
 
-h2 {
-  font-family: 'Barlow';
-  font-size: 35px;
-  color: #125890;
-  font-weight: 300;
-  margin: 60px;
-}
+  .brown {
+      background-color:#904a12;
+      color: white;
+  }
 
-h3 {
-  font-weight: 300;
-  font-size: 35px;
-  color: #125890;
-  margin: 6px;
-  margin: 6px;
-}
+  .light-blue {
+      background-color:#129089 ;
+      color: white;
+    
+  }
+  
+  .dark-blue {
+      background-color:#121990 ;
+      color: white;
+  }
 
-h4 {
-  font-size: 30px;
-  color: #125890;
-}
+  .dark-pink {
+      background-color: #901258;
+      color: white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* hover rgb reveal 
 
-.pics li {
-  display: inline-block;
-}
+.rgb .rgbtext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .rgb {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+  }
+  
+  .rgb.rgbtext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey transparent transparent transparent;
+  }
+  
+  .rgb:hover .rgbtext {
+    visibility: visible;
+  }
 
-img {
-  box-sizing: border-box;
-  width: auto;
-  height: 200px;
-  border: 3px solid black;
+
+
+
+
+
+
+
+
+  /*
+  border: 1px solid #33437d;
   border-radius: 10px;
-  margin: 9px 11px 0 5px;
-}
-.pics li:hover {
-  color: rgb(19, 18, 18);
-  opacity: o.8;
-}
 
-.style {
-  color: cornflowerblue;
-  font-weight: 500;
-}
-.style:hover {
-  color: rgb(5, 5, 105);
-}
-a .jay h2 {
-  margin: 40px;
-  border: 2px solid #125890;
-  text-decoration: double;
-  font-weight: 300;
-  border: 2px solid #125890;
-}
+   header {
+      background-color: #125890;
+      position: fixed;
+      width: 100%;
+      opacity: 0.9;
+      z-index: 10;
+      border-radius: 5px;
+     
+  }
+
+
+
+
+
+
+  /*
+  border: 1px solid #33437d;
+  border-radius: 10px;
+
+   header {
+      background-color: #125890;
+      position: fixed;
+      width: 100%;
+      opacity: 0.9;
+      z-index: 10;
+      border-radius: 5px;
+     
+  }
