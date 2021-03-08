@@ -4,4 +4,4 @@
 
 [Link to the original CodeA design spec to compare to my finished project](https://content.codecademy.com/PRO/independent-practice-projects/website-design-system/example/index.html)
 ### **My Design System**
-https://davidkrem.github.io/............
+https://davidkrem.github.io/Website-Design-System/
