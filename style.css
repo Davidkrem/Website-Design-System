@@ -66,7 +66,7 @@
 
 
   body {
-    background-color: #7b9bc033;
+    background-color: #eaf0f733
     height: 1000px;
     width: 100%;
   }
@@ -84,6 +84,13 @@
     padding: 20px;
     margin-bottom: 53px;
   }
+
+  /* animate bounce on h1 */
+
+h1.animate__animated.animate__bounce {
+  --animate-duration: 1s;
+}
+
   /* h1 "style" word */
   
   .style {
@@ -177,7 +184,7 @@
       width: 30px;
       height: 30px;
       border: 1px solid #125890;
-      border-radius: 5px;
+      border-radius: 15px;
   }
   
   .colors h3 {
@@ -314,36 +321,96 @@
 
 /* Symbols section */
 .mic {
-    width: 75px;
+    width: 85px;
     height: auto;
+    border: 1px solid black;
+}
+
+.a3 {
+  width: 110px;
+    height: auto;
+    border: 1px solid gold;
+
+}
+
+.camera {
+  width: 100px;
+    height: auto;
+    border: 1px solid black;
 
 }
 
 /* animation section */
 .box {
     position: relative;
-    border: 3px solid #000;
+    border: 3px solid rgb(7, 6, 6);
     border-radius: 14px;
     left: 42%;
     margin: 20px;
-    width: 150px;
-    height: 150px;
-    background:  #125890;
+    width: 100px;
+    height: 75px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 12px;
+    background:  #7eacd1;
     transition: 
       /* step 1 */
       width      1s,
       /* step 2 */
       background 0.5s 1s;
-    line-height: 4;
-  }
+    line-height: 2;
+  } 
+ 
   
   .box:hover {
-    width: 400px;
-    background: #901258;
+    width: 200px;
+    background: #129089;
     
   }
 
-  /*
+/* animation button */
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/*.button1 {
+  background-color:#121990;
+}
+
+*/
+.color-change-2x {
+	-webkit-animation: color-change-2x 4s linear infinite alternate both;
+	        animation: color-change-2x 4s linear infinite alternate both;
+}
+
+ @-webkit-keyframes color-change-2x {
+  0% {
+    background: #7eacd1;
+  }
+  100% {
+    background: #901258;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background:#7eacd1;
+  }
+  100% {
+    background: #901258;
+  }
+}
+
+ 
+ /*
   border: 1px solid #33437d;
   border-radius: 10px;
 
@@ -357,12 +424,6 @@
      
   }
 
-
-
-
-
-
-  /*
   border: 1px solid #33437d;
   border-radius: 10px;
 
@@ -375,3 +436,5 @@
       border-radius: 5px;
      
   }
+
+  */
